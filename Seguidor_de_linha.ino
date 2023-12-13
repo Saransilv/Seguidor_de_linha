@@ -24,10 +24,12 @@ void loop() {
     esquerda(150);
   }
 
-  if (se == PRETO && sd == BRANCO){
+  if (se == PRETO && sd == PRETO){
     parar();
   }
+  delay(10);
 }
+
 
 /*
 void loop() {

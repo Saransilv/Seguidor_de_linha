@@ -1,27 +1,28 @@
 #include "mybot.h"
-
+int velocidade = 90;
 
 void setup() {
   iniciar_robo();
   Serial.begin(9600);
-  delay(3000);
-  esquerda(100);
+  delay(5000);
 }
 
 void loop() {
   int sd = sensor_direito();
   int se = sensor_esquerdo();
   
+  Serial.print(se? "Preto ": "Branco ");
+  Serial.print(sd? "Preto\n": "Branco\n");
 
   if(se == BRANCO && sd == BRANCO){
-    frente(150);
+    frente(velocidade);
   }
 
   if(se == BRANCO && sd == PRETO){
-    direita(150);
+    direita(velocidade);
   }
   if(se == PRETO && sd == BRANCO){
-    esquerda(150);
+    esquerda(velocidade);
   }
 
   if (se == PRETO && sd == PRETO){

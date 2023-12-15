@@ -75,4 +75,3 @@ int sensor_esquerdo(){
 int sensor_direito(){
   return digitalRead(PINO_SENSOR_DIREITO);
 }
-

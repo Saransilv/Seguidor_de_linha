@@ -14,7 +14,7 @@
 #define PINO_MOTOR_2_B 2 
 #define PINO_MOTOR_2_C 3
 
-#define PINO_SENSOR_ESQUERDO 12
+#define PINO_SENSOR_ESQUERDO 13
 #define PINO_SENSOR_DIREITO A4
 
 void iniciar_robo();
